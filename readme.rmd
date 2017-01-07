@@ -1,0 +1,45 @@
+This is my Coursera Git Repo for the '** Getting and Cleaning Data Course Project **'
+
+The R-script run_analysis.r does the following:
+
+ 
+## GLOBAL SETTINGS##
+- Set the working directory
+- load necessary packages
+
+## TASK: MERGE THE TRAINING AND TEST SETS TO CREATE ONE DATA SET##
+- load the train data in 3 tables
+- load the test data in 3 tables
+- merge the 3 tables by row binding
+- set the variable names of subject and labels
+- set the variable names of the data
+- load the variable names
+- set the variable names
+- merge the datasets
+
+
+## TASK: EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION##
+- define which columns have the word mean() or std() in them
+- subset 'data' leaving the names from subfeatures, the subject and the activity
+
+## TASK: name the activities (descriptive) in the dataset##
+- read the descriptive activity names from activity_labels.txt
+- name the variables to join them with the allData_mean_stad table
+- merge the two files on activity
+- change some headers
+- factorize the activity column
+
+## TASK: label the dataset with descriptive variable names##
+- when the variablename start with a f it means frequency
+- Acc = Accelerator
+- Mag = Magnitude
+- Gyro = Gyroscope
+
+## TASK: create a second independent tidy dataset with the average for each variable, for each activity for each subject##
+- first also factorize subject
+- transform allData_mean_std to a data table
+- create the new tidy dataset with means for alle variables per subject and activity
+- write to a file
+
+
+
